@@ -1,0 +1,69 @@
+.TruckForm-background {
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TruckForm {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.TruckForm h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.TruckForm label {
+  color: white; 
+  margin-bottom: 5px;
+}
+
+.TruckForm input[type="text"],
+.TruckForm input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none; /* Remove a borda */
+  background-color: rgba(5, 0, 0, 0.511); /* Fundo transparente */
+  color: white; /* Cor do texto */
+}
+
+.TruckForm .button-container {
+  display: flex; /* Flexbox para os botões */
+  justify-content: space-between; /* Espaço entre os botões */
+  margin-top: 20px; /* Margem superior para os botões */
+}
+
+.TruckForm button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #28a745; /* Cor do botão */
+  border: none; /* Sem borda */
+  border-radius: 4px;
+  color: rgb(10, 7, 7);
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: 48%; /* Largura dos botões */
+}
+
+.TruckForm button.cancel {
+  background-color: #dc3545; /* Cor do botão "Cancelar" */
+}
+
+.TruckForm button:hover {
+  background-color: #288821; /* Cor de fundo ao passar o mouse */
+}
+
+.TruckForm button.cancel:hover {
+  background-color: #c82333; /* Cor ao passar o mouse no botão "Cancelar" */
+}
